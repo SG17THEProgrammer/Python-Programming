@@ -1,0 +1,5 @@
+a=int(input("enter any number"))
+b=int(input("enter any number"))
+a>b and print(f"{a} is greatest")
+b>a and print(f"{b} is greatest")
+a==b and print(f"{a} and {b}, both are equal")

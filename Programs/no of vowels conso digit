@@ -1,0 +1,13 @@
+str=input("enter the string")
+for i in range
+if str=='aeiouAEIOU':
+    print("vowels:")
+elif:
+    str=='bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+    print("consonent:")     
+elif:
+    str=='0123456789'
+    print("digit:")    
+elif:
+    str==''
+    print("white space:")    

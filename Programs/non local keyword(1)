@@ -1,0 +1,12 @@
+a=20
+def fun():
+    a=10
+    def fun1():
+        nonlocal a
+        print(a)
+        a=5
+        print(a)
+    fun1()
+    print(a)
+fun()
+print(a)

@@ -1,0 +1,10 @@
+a=int(input("length of 1st side of triangle:"))
+b=int(input("length of 2nd side of triangle:"))
+c=int(input("length of 3rd side of triangle:"))
+
+if (a==b==c):
+    print("triangle is an equilateral triangle")
+elif(((a==b)or(b==c))or (a==c)):
+    print("triangle is an isoceles triangle")
+elif(a!=b!=c):
+    print("triangle is a scalene triangle")

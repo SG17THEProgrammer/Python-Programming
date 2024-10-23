@@ -1,0 +1,67 @@
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+        except ValueError as ERROR:
+            print("Invalid input")
+            print(ERROR)
+            print("FIRST LEARN FOR WHAT THE CALCULATOR IS MADE FOR THEN COME BACK")
+            break
+        
+        print("Select operation:")
+        print("Press 1 for Adding")
+        print("Press 2 for Subtraction")
+        print("Press 3 for Multiplication")
+        print("Press 4 for Division")
+
+        choice = input("Enter choice(1/2/3/4): ")
+
+        if choice in ('1', '2', '3', '4'):
+            if choice == '1':
+                try:
+                    print(num1, "+", num2, "=", add(num1, num2))
+                except NameError as ERROR:
+                    print("Invalid input\n")
+                    print(ERROR)
+            
+            elif choice == '2':
+                try:
+                    print(num1, "-", num2, "=", subtract(num1, num2))
+                except NameError as ERROR:
+                     print("Invalid input\n")
+                     print(ERROR)
+                 
+            elif choice == '3':
+                try:
+                    print(num1, "*", num2, "=", multiply(num1, num2))
+                except NameError as ERROR:
+                    print("Invalid input\n")
+                    print(ERROR)
+
+
+            elif choice == '4':
+                try:
+                    print(num1, "/", num2, "=", divide(num1, num2))
+                except ZeroDivisionError as error:
+                    print("Can't divide by zero")
+                    print(error)
+                
+            next_calculation = input("Let's do next calculation? (yes/no): ")
+            if next_calculation == "no":
+                print("calculator closed")
+                break
+    
+        else:
+            print("Invalid Input")

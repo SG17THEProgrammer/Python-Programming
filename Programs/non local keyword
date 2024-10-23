@@ -1,0 +1,9 @@
+def fun():
+    a=10
+    def fun1():
+        a=5
+        print(a)
+    fun1() #fun1() ko call kiya hai toh a=5 print ho jayega 
+    print(a)
+fun()# fun() ko call kiya hai toh a=10 print hoga
+

@@ -1,0 +1,8 @@
+l1=input("enter element of the first list(horizontally):").split()
+l2=input("enter element of second list(horizontally):").split()
+c=0
+for i in l1:
+    for j in l2:
+        if sorted(i)==sorted(j):
+                c+=1
+print("anagram strings:",c) 

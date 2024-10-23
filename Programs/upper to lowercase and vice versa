@@ -1,0 +1,15 @@
+a=str(input("enter any string:"))
+for i in range(0,len(a)):
+    b=ord(a[i])
+    
+    if 65<=b<=90:
+        chr(sum)=b+32
+        print(sum,end="")
+    else:
+             97<=b<=122
+             sum=b-32
+             sum=chr(sum)
+             print(sum,end="")
+
+    
+        

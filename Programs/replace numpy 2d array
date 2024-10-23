@@ -1,0 +1,11 @@
+import numpy as np
+n_arr = np.array([[4,7],
+                  [6,2]])
+print("Given array:")
+print(n_arr)
+  
+print("\nReplacing  all elements of array which are not divisble by 3")
+n_arr[n_arr%3!=0]=0
+  
+print("New array :\n")
+print(n_arr)

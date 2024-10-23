@@ -1,0 +1,7 @@
+word = 'Sample space'
+lst = []
+
+for i in word:
+    lst.append(i)
+
+print(lst)

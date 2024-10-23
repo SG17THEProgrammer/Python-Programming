@@ -1,0 +1,9 @@
+l=[]
+n=int(input("enter the no. of elements in the list:"))
+for i in range(0,n):
+    element=int(input("enter the element of the list:"))
+    l.append(element)
+print("Original string-",l)
+l1=l[::-1]
+print("Reversed string-",l1)
+

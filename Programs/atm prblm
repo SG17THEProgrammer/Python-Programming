@@ -1,0 +1,9 @@
+amt=int(input("enter the amount:"))
+
+two_thousand= amt//2000
+five_hundred= (amt-(two_thousand*2000))//500
+hundred= (amt-(two_thousand*2000)-(five_hundred*500))//100
+
+print("no of 2000 notes is:",two_thousand)
+print("no of 500 notes is:" ,five_hundred)
+print("no of 100 notes is:" ,hundred)

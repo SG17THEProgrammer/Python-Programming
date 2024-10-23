@@ -1,0 +1,3 @@
+a=id("bye")
+b=id("bye")
+print(a,b)

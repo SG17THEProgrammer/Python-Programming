@@ -1,0 +1,4 @@
+a,b=5,2
+c='no better b no worse a'.split()
+d=c[a%20] and none if a+b<len(c) else c[b%20]
+print(d,eval(d))

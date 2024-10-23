@@ -1,0 +1,5 @@
+import random as r
+s=r.getstate()
+print(r.sample (range(2,20),10))
+r.setstate(s)
+print(r.sample(range(2,20),10))

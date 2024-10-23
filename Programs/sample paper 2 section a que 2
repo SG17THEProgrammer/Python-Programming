@@ -1,0 +1,5 @@
+a = 'first'
+b = 'last'
+k =  'a' and 'b' if a is not b else 'a'
+out = eval(k)
+print(out, type(out))
